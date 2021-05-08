@@ -130,17 +130,6 @@ F 3 "" H 1550 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 604A0BE3
-P 2050 1400
-F 0 "J1" H 2130 1392 50  0000 L CNN
-F 1 "Conn_01x02" H 2130 1301 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 2130 1255 50  0001 L CNN
-F 3 "~" H 2050 1400 50  0001 C CNN
-	1    2050 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0107
 U 1 1 604B7EA7
 P 850 3000
@@ -660,7 +649,7 @@ U 1 1 6056D422
 P 7850 5850
 F 0 "SW1" V 7804 5998 50  0000 L CNN
 F 1 "SW_Push" V 7895 5998 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 7850 6050 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 7850 6050 50  0001 C CNN
 F 3 "~" H 7850 6050 50  0001 C CNN
 	1    7850 5850
 	0    1    1    0   
@@ -948,4 +937,15 @@ Wire Wire Line
 Connection ~ 1800 1500
 Wire Wire Line
 	1800 1500 1850 1500
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 604A0BE3
+P 2050 1400
+F 0 "J1" H 2130 1392 50  0000 L CNN
+F 1 "Conn_01x02" H 2130 1301 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal" H 2130 1255 50  0001 L CNN
+F 3 "~" H 2050 1400 50  0001 C CNN
+	1    2050 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
